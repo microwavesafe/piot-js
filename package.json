@@ -2,10 +2,12 @@
   "name": "piot",
   "version": "0.1.0",
   "description": "Library to interface to PiOT network",
-  "main": "piot.js",
-  "author": "andrew.gatt@springltd.co",
-  "license": "MIT",
+  "keywords": [
+    "piot"
+  ],
   "dependencies": {
     "serialport": "^6.2.0"
   },
+  "author": "andrew.gatt@springltd.co",
+  "license": "MIT"
 }
