@@ -1,18 +1,11 @@
 {
-  "name": "libpiot",
-  "version": "1.0.0",
+  "name": "piot",
+  "version": "0.1.0",
   "description": "Library to interface to PiOT network",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index.js"
-  },
-  "author": "",
+  "main": "piot.js",
+  "author": "andrew.gatt@springltd.co",
   "license": "MIT",
   "dependencies": {
     "serialport": "^6.2.0"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
-  }
 }
