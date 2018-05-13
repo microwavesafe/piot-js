@@ -1,5 +1,4 @@
-const { getHexString } = require( './lib/bytes')
-const Piot = require('./piot')
+const Piot = require('piot')
 
 Piot.list().then(function(list){
     let piot = new Piot(list[0].comName);
@@ -16,7 +15,11 @@ Piot.list().then(function(list){
     });
 
     piot.on('data', (data) => {
-        console.log(getHexString(data));
+        let hexString = '';
+        for (let i=0; i<data.length; i++) {
+            hexString += ('0' + (data[i] & 0xFF).toString(16)).slice(-2);
+        }
+        console.log(hexString);
     });
 });
 
