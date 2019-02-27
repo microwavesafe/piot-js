@@ -6,7 +6,7 @@
     "piot"
   ],
   "dependencies": {
-    "serialport": "^6.2.0"
+    "serialport": "^7.1.4"
   },
   "main": "lib",
   "author": "andrew.gatt@springltd.co",
